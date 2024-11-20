@@ -121,7 +121,7 @@ section {
     letter-spacing: 0.1rem;
 }
 
-.caixa-sobre h2 {
+.titulo {
     text-align: center;
     color: #fff;
     text-transform: uppercase;
@@ -129,24 +129,23 @@ section {
     font-size: 4rem;
 }
 
-.caixa-sobre h2 span {
+.titulo span {
     color: var(--main-color);
 }
 
 .caixa-sobre .sobre-container {
     display: flex;
     align-items: center;
-    background-color: black;
+    background-color: var(--black);
     gap: 1.5rem;
     flex-wrap: wrap;
 }
 
 .caixa-sobre .sobre-container .sobre-imagem {
     flex: 1 1 45rem;
-
 }
 
-.caixa-sobre .sobre-container .sobre-imagem {
+.caixa-sobre .sobre-container .sobre-imagem img {
     width: 100%;
 }
 
@@ -163,7 +162,31 @@ section {
 .caixa-sobre .sobre-container .sobre-texto p {
     font-size: 1.5rem;
     font-weight: lighter;
-    color: #fff;
+    color: white;
     line-height: 1.8;
     padding: 1rem 0;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    gap: 20px;
+    z-index: 4;
+    position: fixed;
+    top: 50%;
+    left: -30%;
+    transform: translate(-50%, -50%);
+    transition: left 1s linear;
+}
+
+.mascara-modal {
+    visibility: hidden; 
+    z-index: 3;
+    position: fixed;
+    inset: 0;
+    width: 100vh;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+
 }

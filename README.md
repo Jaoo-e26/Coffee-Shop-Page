@@ -28,7 +28,7 @@ All content is statically managed on the front end, ensuring fast loading, offli
 
 * Clean and organized front-end code
 
-  🎯 Project Goal
+🎯 Project Goal
 
 To demonstrate solid knowledge of front-end development fundamentals, including responsive design, layout composition, CSS styling techniques, and JavaScript-based interactions. 
 This project is intended for professional portfolio presentation, especially for landing page and UI-focused roles.
